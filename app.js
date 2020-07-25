@@ -37,8 +37,14 @@ const state = {
                 this.min = -300;
                 this.max = 300;
             }
+            if (this.score > 25) {
+                this.min = -500;
+                this.max = 500;
+            }
         } else {
             this.score = 0;
+            this.min = -100;
+            this.max = 100;
         }
         this.a = random_number(this.min, this.max);
         this.b = random_number(this.min, this.max);
