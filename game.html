@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Math Game</title>
+</head>
+
+<body>
+
+    <header id="game-header">
+        <div class="container">
+            <h1 class="m-heading">Solve the expression</h1>
+            <p id="expression" class="lead">25 + 49</p>
+            <div class="progress-border">
+                <div id="progress" class="progress-red"></div>
+            </div>
+        </div>
+        <span class="score">Score: <span id="score">0</span></span>
+    </header>
+
+    <section id="game-field">
+        <div class="number lead">100</div>
+        <div class="number lead">24</div>
+        <div class="number lead">453</div>
+        <div class="number lead">2</div>
+        <div class="number lead">44</div>
+        <div class="number lead">-10</div>
+    </section>
+
+    <a href="index.html" class="btn">Stop</a>
+
+    <div id="lose">
+        <div class="menu">
+            <h2 class="m-heading">Game Over</h2>
+            <span>Your score: <span id="end-score">5</span></span>
+            <span>The best score: <span id="best-score">10</span></span>
+            <button id="reset" class="btn">Play again</button>
+            <a href="index.html" class="btn">Exit</a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
