@@ -56,13 +56,13 @@ const state = {
     }
 }
 
+function random_number(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function startGame() {
     state.update();
     UIgame.addEventListener('click', checkUserAnswer);
-}
-
-function random_number(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 function display() {
